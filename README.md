@@ -1,11 +1,11 @@
 # AlgoSketch
 
-AlgoSketch is a small, educational compiler for a simple procedural language. It
-lexes and parses `.algo` source, performs semantic analysis and type inference,
-lowers the program to three-address code (TAC), and emits C source that is then
-compiled to a native executable with GCC.
+I built **AlgoSketch**, a small educational compiler for a simple procedural
+language. It lexes and parses `.algo` source, performs semantic analysis and type
+inference, lowers the program to three-address code (TAC), and emits C source
+that is then compiled to a native executable with GCC.
 
-The compiler is written in C and uses **Flex** (lexer) and **Bison** (parser).
+I wrote the compiler in C using **Flex** (lexer) and **Bison** (parser).
 
 ## Features
 
@@ -19,8 +19,8 @@ The compiler is written in C and uses **Flex** (lexer) and **Bison** (parser).
 - Clear semantic errors with source line numbers, and safety checks for
   duplicate declarations, type mismatches, bad argument counts, and recursion
 
-The language intentionally omits recursion, arrays, pointers, classes, user
-input, `for`, `break`, `continue`, and overloading.
+I deliberately left the language minimal: no recursion, arrays, pointers,
+classes, user input, `for`, `break`, `continue`, or overloading.
 
 ## Example
 
@@ -113,7 +113,7 @@ src/
   main.c         CLI driver and compilation pipeline
 tests/           Positive (.algo programs) and error-case tests
 tools/           Bundled win_flex / win_bison for Windows
-generated/       Generated C sources and executables
+generated/       Generated C sources and executables (build output)
 build.bat        Windows build script
 Makefile         Cross-platform make build
 REPORT.md        Detailed implementation and completion report
@@ -133,7 +133,7 @@ REPORT.md        Detailed implementation and completion report
 
 ## Tests
 
-The `tests/` directory contains:
+I keep two kinds of tests in `tests/`:
 
 - **Positive tests** (`test01`–`test13`): valid programs covering expressions,
   `if`, `while`, functions, text, booleans, scoping, and type inference.
@@ -145,7 +145,3 @@ The `tests/` directory contains:
 algosketch.exe tests\test08_canonical.algo --run
 algosketch.exe tests\err06_recursion.algo
 ```
-
-## License
-
-No license specified. All rights reserved by the author unless stated otherwise.
