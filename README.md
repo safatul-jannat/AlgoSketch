@@ -1,11 +1,11 @@
 # AlgoSketch
 
-I built **AlgoSketch**, a small educational compiler for a simple procedural
-language. It lexes and parses `.algo` source, performs semantic analysis and type
+**AlgoSketch** is a small educational compiler for a simple procedural language.
+It lexes and parses `.algo` source, performs semantic analysis and type
 inference, lowers the program to three-address code (TAC), and emits C source
 that is then compiled to a native executable with GCC.
 
-I wrote the compiler in C using **Flex** (lexer) and **Bison** (parser).
+The compiler is implemented in C using **Flex** (lexer) and **Bison** (parser).
 
 ## Features
 
@@ -19,8 +19,9 @@ I wrote the compiler in C using **Flex** (lexer) and **Bison** (parser).
 - Clear semantic errors with source line numbers, and safety checks for
   duplicate declarations, type mismatches, bad argument counts, and recursion
 
-I deliberately left the language minimal: no recursion, arrays, pointers,
-classes, user input, `for`, `break`, `continue`, or overloading.
+The language is intentionally kept minimal: recursion, arrays, pointers,
+classes, user input, `for`, `break`, `continue`, and overloading are not
+supported.
 
 ## Example
 
@@ -133,7 +134,7 @@ REPORT.md        Detailed implementation and completion report
 
 ## Tests
 
-I keep two kinds of tests in `tests/`:
+Two kinds of tests are provided in `tests/`:
 
 - **Positive tests** (`test01`–`test13`): valid programs covering expressions,
   `if`, `while`, functions, text, booleans, scoping, and type inference.
