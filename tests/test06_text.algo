@@ -1,0 +1,9 @@
+var message = "Hello World";
+
+
+
+
+var x = 42;
+display "Direct string";
+display message;
+display x;

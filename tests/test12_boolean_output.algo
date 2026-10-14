@@ -1,0 +1,6 @@
+var t = true;
+var f = false;
+var same = t == f;
+
+display t;
+display same;

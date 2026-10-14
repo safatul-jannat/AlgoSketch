@@ -1,0 +1,11 @@
+var x = 15;
+
+if x > 10 then
+    display x;
+otherwise
+    display 0;
+end
+
+if x > 100 then
+    display 999;
+end

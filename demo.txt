@@ -1,0 +1,12 @@
+algosketch tests/test01_basic.algo
+algosketch tests/test02_expression.algo
+algosketch tests/test03_if.algo
+algosketch tests/test04_while.algo
+
+algosketch tests/test05_function.algo
+
+algosketch tests/test06_text.algo
+algosketch tests/test07_boolean.algo
+algosketch tests/test08_canonical.algo
+
+algosketch tests/test11_scope_independent.algo

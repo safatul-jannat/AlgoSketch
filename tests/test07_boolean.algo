@@ -1,0 +1,15 @@
+var a = true;
+var b = false;
+var flag = a and b;
+var isGreater = 5 > 3;
+var combined = a or b;
+
+display flag;
+display a;
+display b;
+
+
+display isGreater;
+
+
+display combined;

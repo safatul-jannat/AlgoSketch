@@ -1,0 +1,34 @@
+function Add(a,b)
+
+begin
+
+    return a+b;
+
+end
+
+var x = 10;
+var y = 20;
+var sum = Add(x,y);
+var i = 0;
+
+var done = false;
+if sum > 25 then
+    display "Sum is large";
+otherwise
+    display "Sum is small";
+end
+
+
+while i < 3
+    i = i + 1;
+end
+
+display i;
+
+
+
+if not done then
+    display "Not done yet";
+end
+display "The sum is:";
+display sum;

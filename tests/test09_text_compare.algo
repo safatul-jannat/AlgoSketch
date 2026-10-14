@@ -1,0 +1,15 @@
+var a = "hello";
+var b = "hello";
+var c = "world";
+
+if a == b then
+    display "equal";
+otherwise
+    display "not equal";
+end
+
+if a == c then
+    display "same";
+otherwise
+    display "different";
+end

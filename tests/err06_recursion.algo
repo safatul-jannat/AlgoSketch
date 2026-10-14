@@ -1,0 +1,10 @@
+function A()
+
+begin
+
+    return A();
+
+end
+
+var r = A();
+display r;

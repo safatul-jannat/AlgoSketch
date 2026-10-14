@@ -1,0 +1,14 @@
+function Make(c)
+
+begin
+
+    var n = c * 2;
+    return n;
+
+end
+
+var a = Make(3);
+var b = Make(5);
+
+display a;
+display b;

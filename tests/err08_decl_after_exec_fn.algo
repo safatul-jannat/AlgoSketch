@@ -1,0 +1,13 @@
+function Test(x)
+
+begin
+
+    display x;
+    var y = x + 1;
+
+    return y;
+
+end
+
+var r = Test(1);
+display r;

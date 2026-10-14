@@ -1,0 +1,21 @@
+function Add(a,b)
+
+begin
+
+    return a+b;
+
+end
+
+function Multiply(a,b)
+
+begin
+
+    return a*b;
+
+end
+
+var result = Add(10,20);
+var product = Multiply(3,4);
+
+display result;
+display product;

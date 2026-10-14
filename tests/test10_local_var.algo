@@ -1,0 +1,12 @@
+function Square(x)
+
+begin
+
+    var result = x * x;
+    return result;
+
+end
+
+var answer = Square(6);
+
+display answer;
